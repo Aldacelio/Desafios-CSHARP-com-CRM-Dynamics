@@ -15,10 +15,11 @@ while (cont == 1){
     int x,y;
     string alerta = string.Empty;
     Calculadora calculadora = new Calculadora();
+    Acoes acoes = new Acoes();
 
     Console.WriteLine("Escolhe a opção desejada: ");
     
-    //Utilizo uma strig em vez de Char para que caso o usuario digite um numero com mais de 1 caractere não acabe quebrando a aplicação
+    //Utilizo uma string em vez de Char para que caso o usuario digite um numero com mais de 1 caractere não acabe quebrando a aplicação
     string operacao = Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula.");      
     Console.Clear();
 
@@ -31,75 +32,103 @@ while (cont == 1){
         case "1":
                
             Console.WriteLine("Digite o primeiro valor: ");
-            x = int.Parse(Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula."));
+            x = acoes.X();
                 
             Console.WriteLine("Digite o segundo valor: ");
-            y = int.Parse(Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula."));
+            y = acoes.Y();
                 
             calculadora.Somar(x,y);
                 
-            Console.WriteLine("Digite 0 para encerra e 1 para realizar outra operação: ");
-            cont = int.Parse(Console.ReadLine() ?? throw new Exception());
+            cont = acoes.Decidir();
 
         break;
 
         case "2":
 
             Console.WriteLine("Digite o primeiro valor: ");
-            x = int.Parse(Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula."));
-                
+            x = acoes.X();
+
             Console.WriteLine("Digite o segundo valor: ");
-            y = int.Parse(Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula."));
+            y = acoes.Y();
                 
             calculadora.Subtrair(x,y);
 
-            Console.WriteLine("Digite 0 para encerra e 1 para realizar outra operação: ");
-            cont = int.Parse(Console.ReadLine() ?? throw new Exception());
+            cont = acoes.Decidir();
 
         break;
         
         case "3":
 
             Console.WriteLine("Digite o primeiro valor: ");
-            x = int.Parse(Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula."));
-                
+            x = acoes.X();
+
             Console.WriteLine("Digite o segundo valor: ");
-            y = int.Parse(Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula."));
+            y = acoes.Y();
                 
             calculadora.Dividir(x,y);
 
-            Console.WriteLine("Digite 0 para encerra e 1 para realizar outra operação: ");
-            cont = int.Parse(Console.ReadLine() ?? throw new Exception());
+            cont = acoes.Decidir();
 
         break;
 
         case "4":
 
             Console.WriteLine("Digite o primeiro valor: ");
-            x = int.Parse(Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula."));
-                
+            x = acoes.X();
+
             Console.WriteLine("Digite o segundo valor: ");
-            y = int.Parse(Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula."));
+            y = acoes.Y();
 
             calculadora.Multiplicar(x,y);            
 
-            Console.WriteLine("Digite 0 para encerra e 1 para realizar outra operação: ");
-            cont = int.Parse(Console.ReadLine() ?? throw new Exception());    
+            cont = acoes.Decidir();  
 
         break;
 
         case "5":
 
             Console.WriteLine("Digite a base: ");
-            x = int.Parse(Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula."));
-                
+            x = acoes.X();
+
             Console.WriteLine("Digite o expoente: ");
-            y = int.Parse(Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula."));
+            y = acoes.Y();
 
             calculadora.Potencia(x,y);            
 
-            Console.WriteLine("Digite 0 para encerra e 1 para realizar outra operação: ");
-            cont = int.Parse(Console.ReadLine() ?? throw new Exception());    
+            cont = acoes.Decidir();
+
+        break;
+
+        case "6":
+
+            Console.WriteLine("Digite o grau: ");
+            x = acoes.X();
+
+            calculadora.Seno(x);            
+
+            cont = acoes.Decidir(); 
+
+        break;
+
+        case "7":
+
+            Console.WriteLine("Digite o grau: ");
+            x = acoes.X();
+
+            calculadora.Cosseno(x);            
+
+            cont = acoes.Decidir();  
+
+        break;
+
+        case "8":
+
+            Console.WriteLine("Digite o grau: ");
+            x = acoes.X();
+
+            calculadora.Tangente(x);            
+
+            cont = acoes.Decidir();  
 
         break;
 

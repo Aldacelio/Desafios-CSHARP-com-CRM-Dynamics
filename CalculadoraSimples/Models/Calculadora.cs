@@ -36,6 +36,22 @@ namespace CalculadoraSimples.Models
                                "| Potência | -> "+ $"| {x} ^ {y} = {Math.Pow(x,y)} |\n"+
                                "-----------");
         }
+        public void Seno(double angulo){
+            Console.WriteLine( "-----------------\n"+
+                               "| Seno | de "+ $"| {angulo}° = {Math.Round(Math.Sin(angulo * Math.PI / 180),4)} |\n"+
+                               "-----------------");
+        }
 
+        public void Cosseno(double angulo){
+            Console.WriteLine( "-----------\n"+
+                               "| Cosseno | de "+ $"| {angulo}° = {Math.Round(Math.Cos(angulo * Math.PI / 180)),4} |\n"+
+                               "-----------");
+        }
+
+        public void Tangente(double angulo){
+            Console.WriteLine( "------------\n"+
+                               "| Tangente | de "+ $"| {angulo}° = {Math.Round(Math.Tan(angulo * Math.PI / 180),4)} |\n"+
+                               "-----------");
+        }
     }
 }
