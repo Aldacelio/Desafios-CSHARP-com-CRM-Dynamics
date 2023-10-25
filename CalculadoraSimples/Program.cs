@@ -121,6 +121,16 @@ while (cont == 1)
             //Decisão de o que fazer após receber o resultado
             cont = acoes.Decidir();
             break;
+        case "9":
+            //Recebendo o grau que se quer ter a Tangente
+            Console.WriteLine("Digite o número que quer saber a Raiz quadrada: ");
+            x = acoes.X();
+
+            //Executando a Tangente
+            calculadora.RaizQuadrada(x);
+            //Decisão de o que fazer após receber o resultado
+            cont = acoes.Decidir();
+            break;
         default:
             alerta = "Digite uma opção válida por favor !!";
             break;
