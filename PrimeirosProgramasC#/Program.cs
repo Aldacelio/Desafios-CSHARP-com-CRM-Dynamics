@@ -6,6 +6,7 @@ e.mensagem();
 int cont = 0;
 
 // enquanto onde roda todas as funcionalidades 
-while (cont == 0){
+while (cont == 0)
+{
     cont = e.teste();
 }

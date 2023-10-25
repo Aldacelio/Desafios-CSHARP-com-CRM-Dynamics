@@ -1,7 +1,9 @@
-public class Menu{
+public class Menu
+{
 
     //mensagem que mostra o menu com todas as opções
-    public void mensagem(){
+    public void mensagem()
+    {
         var mensagem = "-------------------------------\n" +
                        "|      Escolha uma opção      |\n" +
                        "-------------------------------\n" +
@@ -21,12 +23,14 @@ public class Menu{
     }
 
     //realiza o teste de aprovação
-    public int teste(){
+    public int teste()
+    {
 
         Console.WriteLine("Escolhe a opção desejada: ");
         char operacao = Char.Parse(Console.ReadLine());
         int aux = 0;
-        switch (operacao){
+        switch (operacao)
+        {
             case '0':
                 aux = 1;
                 break;
@@ -52,11 +56,13 @@ public class Menu{
                 break;
         }
 
-        if (aux == 1){
+        if (aux == 1)
+        {
             Console.Clear();
             return aux;
         }
-        else{
+        else
+        {
             mensagem();
             return aux;
         }

@@ -7,8 +7,10 @@ using CalculadoraSimples.Models;
 
 namespace CalculadoraSimples.View
 {
-    public class Menu{
-        public void MensagemMenu(){
+    public class Menu
+    {
+        public void MensagemMenu()
+        {
             var mensagem = "-------------------------------\n" +
                            "|      Escolha uma opção      |\n" +
                            "-------------------------------\n" +
@@ -30,7 +32,7 @@ namespace CalculadoraSimples.View
                            "|---|-------------------------|\n" +
                            "| 0 |          Sair           |\n" +
                            "-------------------------------";
-            
+
             Console.WriteLine(mensagem);
 
         }

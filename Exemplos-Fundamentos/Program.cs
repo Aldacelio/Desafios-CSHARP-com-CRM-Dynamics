@@ -8,10 +8,10 @@ Console.WriteLine("Digite o seu nome por favor: ");
 nome = Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula.");
 
 Console.WriteLine("Digite a sua idade por favor: ");
-idade = int.Parse(Console.ReadLine()  ?? throw new ArgumentNullException("A entrada não pode ser nula."));
+idade = int.Parse(Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula."));
 
 Console.WriteLine("Digite a sua altura por favor: ");
-altura = double.Parse(Console.ReadLine()  ?? throw new ArgumentNullException("A entrada não pode ser nula."));
+altura = double.Parse(Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula."));
 
 Pessoa pessoa = new Pessoa(nome, idade, altura);
 
