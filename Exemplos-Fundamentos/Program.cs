@@ -1,18 +1,133 @@
-﻿using ExemplosFundamentos.Models;
+﻿using Exemplos_Fundamentos.View;
+using Exemplos_Fundamentos.Models;
 
-string nome;
-int idade;
-double altura;
+int cont = 1;
+while(cont == 1)
+{
 
-Console.WriteLine("Digite o seu nome por favor: ");
-nome = Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula.");
+    //chamando o MENU pela primeira vez
+    Menu menu = new Menu();
+    string opcao = menu.Mensagem();
+    Console.Clear();
 
-Console.WriteLine("Digite a sua idade por favor: ");
-idade = int.Parse(Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula."));
+    //Declarações necessarias
+    Funcionalidades funcionalidades = new Funcionalidades();
+    MaisUma maisUma = new MaisUma();
 
-Console.WriteLine("Digite a sua altura por favor: ");
-altura = double.Parse(Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula."));
+    switch(opcao)
+    {
 
-Pessoa pessoa = new Pessoa(nome, idade, altura);
+        case "1":
+            funcionalidades.HelloWorld();
+            cont = maisUma.Novamente(opcao);
+            break;
 
-pessoa.Apresentar();
+        case "2":
+            funcionalidades.UtIfElse();
+            cont = maisUma.Novamente(opcao);
+            break;
+        default:
+            break;
+
+    }
+
+    // if(cont == 1){
+    //     Console.Clear();
+    //     menu.Mensagem();
+    // }
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// string nome;
+// int idade;
+// double altura;
+
+// Console.WriteLine("Digite o seu nome por favor: ");
+// nome = Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula.");
+
+// Console.WriteLine("Digite a sua idade por favor: ");
+// idade = int.Parse(Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula."));
+
+// Console.WriteLine("Digite a sua altura por favor: ");
+// altura = double.Parse(Console.ReadLine() ?? throw new ArgumentNullException("A entrada não pode ser nula."));
+
+// Pessoa pessoa = new Pessoa(nome, idade, altura);
+
+// pessoa.Apresentar();
+
+// // trabalhando com arrays
+
+// Console.WriteLine("Quantas posições você deseja que seu array contenha ? ");
+// int posições = int.Parse(Console.ReadLine() ?? throw new ArgumentException("A entrada não pode ser nula."));
+
+// int[] vet = new int[posições];
+
+// Console.WriteLine("Preencha seu vetor");
+
+// for(int i = 0; i< vet.Length;i++){
+//     Console.WriteLine($"Digite a {i+1}ª posição: ");
+//     vet[i] = int.Parse(Console.ReadLine() ?? throw new ArgumentException("A entrada não pode ser nula."));
+// }
+
+// //percorrendo vetor com foreach
+// int j = 1;
+// foreach(int valor in vet){
+    
+//     Console.WriteLine($"O valor da {j}ª posição é: {valor}");
+//     j++;
+    
+// }
+
+// int[] copiaVet = new int[vet.Length*2];
+
+// Array.Copy(vet, copiaVet, vet.Length);
+
+// for(int i = vet.Length; i< copiaVet.Length;i++){
+//     Console.WriteLine($"Digite a {i+1}ª posição: ");
+//     copiaVet[i] = int.Parse(Console.ReadLine() ?? throw new ArgumentException("A entrada não pode ser nula."));
+// }
+
+// //percorrendo vetor com foreach
+// j = 1;
+// foreach(int valor in copiaVet){
+    
+//     Console.WriteLine($"O valor da {j}ª posição é: {valor}");
+//     j++;
+    
+// }
