@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exemplos-Fundamentos", "Exe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraSimples", "CalculadoraSimples\CalculadoraSimples.csproj", "{5247BF9A-5316-4378-860F-0F929D2B1F86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeirosProgramasC#", "PrimeirosProgramasC#\PrimeirosProgramasC#.csproj", "{FD8943EB-DF48-40AD-8626-42C5DB8EC0FC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
