@@ -7,35 +7,8 @@ while(cont == 1)
 
     //chamando o MENU pela primeira vez
     Menu menu = new Menu();
-    string opcao = menu.Mensagem();
+    cont = menu.Mensagem();
     Console.Clear();
-
-    //Declarações necessarias
-    Funcionalidades funcionalidades = new Funcionalidades();
-    MaisUma maisUma = new MaisUma();
-
-    switch(opcao)
-    {
-
-        case "1":
-            funcionalidades.HelloWorld();
-            cont = maisUma.Novamente(opcao);
-            break;
-
-        case "2":
-            funcionalidades.UtIfElse();
-            cont = maisUma.Novamente(opcao);
-            break;
-        default:
-            break;
-
-    }
-
-    // if(cont == 1){
-    //     Console.Clear();
-    //     menu.Mensagem();
-    // }
-
     
 
 }

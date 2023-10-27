@@ -47,14 +47,7 @@ namespace Exemplos_Fundamentos.View
             if(opcao == 1)
             {
                 Funcionalidades funcionalidades = new Funcionalidades();
-                switch(opcaoPrincipal){
-                    case "1":
-                        funcionalidades.HelloWorld();
-                        break;
-                    case "2":
-                        funcionalidades.UtIfElse();
-                        break;
-                }
+                funcionalidades.Op(opcaoPrincipal);
                 return 1;
             }
             else if(opcao == 2)
@@ -63,6 +56,8 @@ namespace Exemplos_Fundamentos.View
                 return 2;
             }
             else{
+                Console.Clear();
+                Environment.Exit(0);
                 return 0;
             }
             
