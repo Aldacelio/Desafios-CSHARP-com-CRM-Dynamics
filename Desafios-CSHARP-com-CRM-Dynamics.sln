@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exemplos-Fundamentos", "Exe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraSimples", "CalculadoraSimples\CalculadoraSimples.csproj", "{5247BF9A-5316-4378-860F-0F929D2B1F86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropriedadesMetodosConstrutores", "PropriedadesMetodosConstrutores\PropriedadesMetodosConstrutores.csproj", "{888036C6-B7AA-4E3F-B8DB-BF118BFDC3C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{FD8943EB-DF48-40AD-8626-42C5DB8EC0FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD8943EB-DF48-40AD-8626-42C5DB8EC0FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD8943EB-DF48-40AD-8626-42C5DB8EC0FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{888036C6-B7AA-4E3F-B8DB-BF118BFDC3C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{888036C6-B7AA-4E3F-B8DB-BF118BFDC3C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{888036C6-B7AA-4E3F-B8DB-BF118BFDC3C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{888036C6-B7AA-4E3F-B8DB-BF118BFDC3C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
