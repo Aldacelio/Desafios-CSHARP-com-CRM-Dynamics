@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraSimples", "Calcu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropriedadesMetodosConstrutores", "PropriedadesMetodosConstrutores\PropriedadesMetodosConstrutores.csproj", "{888036C6-B7AA-4E3F-B8DB-BF118BFDC3C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecoesColecoes", "ExecoesColecoes\ExecoesColecoes.csproj", "{238221FF-802F-42BF-A750-DCD6BD7263DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{888036C6-B7AA-4E3F-B8DB-BF118BFDC3C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{888036C6-B7AA-4E3F-B8DB-BF118BFDC3C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{888036C6-B7AA-4E3F-B8DB-BF118BFDC3C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{238221FF-802F-42BF-A750-DCD6BD7263DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238221FF-802F-42BF-A750-DCD6BD7263DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238221FF-802F-42BF-A750-DCD6BD7263DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238221FF-802F-42BF-A750-DCD6BD7263DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
